@@ -1,0 +1,37 @@
+.button {
+    background-color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.secondary {
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.tertiary {
+    background-color: rgb(43, 173, 225);
+}
+
+.small {
+    font-size: 10px;
+}
+
+.normal {
+    font-size: 15px;
+}
+
+.large {
+    font-size: 20px;
+}
