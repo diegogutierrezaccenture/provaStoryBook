@@ -8,6 +8,7 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    margin: 4px;
 }
 
 .primary {
@@ -21,7 +22,7 @@
 }
 
 .tertiary {
-    background-color: rgb(43, 173, 225);
+    background-color: rgb(44, 177, 225);
 }
 
 .small {

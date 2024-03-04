@@ -9,12 +9,17 @@ export default {
   },
   tags: ['autodocs'],
   argTypes: {
+    label:{
+      description: "Text del button.",
+    },
     type: {
       control: 'radio', 
-      options: ['primary', 'secondary', 'tertiary'], 
+      description: "Tipus de button.",
+      options: ['primary', 'secondary', 'tertiary'],
     },
     size: {
       control: 'radio', // Opcional: 'inline-radio'
+      description: "Mida del button.",
       options: ['small', 'normal', 'large'],
     },
   },
