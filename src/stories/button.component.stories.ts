@@ -7,7 +7,17 @@ export default {
   args: {
     label: "Button",
   },
-  tags: ['autodocs']
+  tags: ['autodocs'],
+  argTypes: {
+    type: {
+      control: 'radio', 
+      options: ['primary', 'secondary', 'tertiary'], 
+    },
+    size: {
+      control: 'radio', // Opcional: 'inline-radio'
+      options: ['small', 'normal', 'large'],
+    },
+  },
 } as Meta;
 
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
