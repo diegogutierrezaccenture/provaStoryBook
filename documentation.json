@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-ccc8005cf052a467127cfda11b4a4f247e37807b0e01fba30d93d456cca59970d3788131ff49deeb389f128a270ddc684ab381de447f53cb0555cc3c6088d022",
+            "id": "component-AppComponent-b9745e8dfc53eb19a887a0e56b718b303e0aee4fff0b068190beb166dee86c13923cc66d3db9e8aae2546da576e09fe70bef10d4d5dafb67532938a131c7069e",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -51,18 +51,26 @@
                 {
                     "name": "ButtonComponent",
                     "type": "component"
+                },
+                {
+                    "name": "MyLibComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "TextComponent",
+                    "type": "component"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { RouterOutlet } from '@angular/router';\r\nimport { ButtonComponent } from '../../projects/my-lib/src/lib/button/button.component';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  standalone: true,\r\n  imports: [RouterOutlet, ButtonComponent],\r\n  templateUrl: './app.component.html',\r\n  styleUrl: './app.component.css'\r\n})\r\nexport class AppComponent {\r\n  title = 'StoryBookProva';\r\n}\r\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { RouterOutlet } from '@angular/router';\r\nimport { ButtonComponent, MyLibComponent, TextComponent } from '../../projects/my-lib/src/public-api';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  standalone: true,\r\n  imports: [RouterOutlet, ButtonComponent, MyLibComponent, TextComponent],\r\n  templateUrl: './app.component.html',\r\n  styleUrl: './app.component.css'\r\n})\r\nexport class AppComponent {\r\n  title = 'StoryBookProva';\r\n}\r\n",
             "styleUrl": "./app.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<app-button></app-button>"
+            "templateData": "<app-button></app-button>\r\n<app-button\r\n  [label]=\"'Button 2'\"\r\n  [type]=\"'tertiary'\"\r\n  [size]=\"'small'\"\r\n></app-button>\r\n<app-button\r\n  [label]=\"'Button 3'\"\r\n  [type]=\"'secondary'\"\r\n  [size]=\"'large'\"\r\n></app-button>\r\n<app-text [text]=\"'Hola'\" [type]=\"'title'\"></app-text>\r\n<lib-my-lib></lib-my-lib>"
         }
     ],
     "modules": [],

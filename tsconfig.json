@@ -13,6 +13,9 @@
     "paths": {
       "my-lib": [
         "./dist/my-lib"
+      ],
+      "@angular/*": [
+        "./node_modules/@angular/*"
       ]
     },
     "esModuleInterop": true,
